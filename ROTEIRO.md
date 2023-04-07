@@ -1,3 +1,6 @@
+Artigo:
+https://luby.com.br/desenvolvimento/software/tutoriais/amazon-cognito/
+
 1) Criar o projeto usando o serverless framework
 serverless create --template aws-nodejs-typescript --path aws-cognito-example
 
