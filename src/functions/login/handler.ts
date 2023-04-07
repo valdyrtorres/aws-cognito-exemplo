@@ -9,13 +9,11 @@ const login = async (event) => {
   try {
     const { email, password } = event.body;
     validateCredentials(email, password);
-    //const { user_pool_id, client_id } = process.env;
+    const { user_pool_id, client_id } = process.env;
     const params = {
       AuthFlow: "ADMIN_NO_SRP_AUTH",
-      // UserPoolId: user_pool_id,
-      // ClientId: client_id,
-      UserPoolId: "us-east-1_rpoAcrC3E",
-      ClientId: "4pacffo5iebdc47kp7gh71ik0o",
+      UserPoolId: user_pool_id,
+      ClientId: client_id,
       AuthParameters: {
         USERNAME: email,
         PASSWORD: password
