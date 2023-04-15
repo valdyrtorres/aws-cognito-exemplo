@@ -35,3 +35,6 @@ functions:
 
 
 validateCredentials: é responsável por validar a entrada dos dados fornecidos pelos usuários, conferindo se o e-mail e senha são válidos. Para isso, é verificado se a senha possui pelo menos oito caracteres. E, para validar o e-mail, é utilizada uma biblioteca externa para verificar se segue o padrão esperado. Para instalá-la em seu projeto, basta executar o comando npm i validator ou yarn add validator.
+
+para remover o projeto e seus derivados da aws:
+serverless remove
